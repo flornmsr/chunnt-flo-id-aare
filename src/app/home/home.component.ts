@@ -24,8 +24,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.aareService.getCurrentAareData().subscribe(data => {
       this.aareData = data;
-      this.aareData.aare.temperature = 18.9
-      this.aareData.aare.flow=200
+      // this.aareData.aare.temperature = 18.9
+      // this.aareData.aare.flow=200
       console.log(this.aareData);
       this.writeAnswer();
       setTimeout(() => {
