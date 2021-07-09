@@ -214,7 +214,7 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.answerElement = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.loadingElement = _t.first);
-    } }, decls: 31, vars: 9, consts: [[1, "content"], [1, "header", "container"], [1, "material-icons", 2, "margin-left", "0.55em"], ["src", "/src/assets/pofilbild.jpg", 1, "pic"], [1, "text"], [1, "icons"], [1, "material-icons", "my-icon"], [1, "messager"], [1, "message"], [1, "typing-demo"], [1, "time"], [1, "message", "message-r"], ["loadingDiv", ""], ["answerDiv", ""], [1, "answer"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 31, vars: 9, consts: [[1, "content"], [1, "header", "container"], [1, "material-icons", 2, "margin-left", "0.55em"], ["src", "./assets/pofilbild.jpg", 1, "pic"], [1, "text"], [1, "icons"], [1, "material-icons", "my-icon"], [1, "messager"], [1, "message"], [1, "typing-demo"], [1, "time"], [1, "message", "message-r"], ["loadingDiv", ""], ["answerDiv", ""], [1, "answer"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span", 2);
