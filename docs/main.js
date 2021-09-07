@@ -214,7 +214,7 @@ class HomeComponent {
     ngOnInit() {
         this.aareService.getCurrentAareData().subscribe(data => {
             this.aareData = data;
-            this.aareData.aare.temperature = 180.9;
+            // this.aareData.aare.temperature = 180.9
             // this.aareData.aare.flow=400
             console.log(this.aareData);
             this.writeAnswer();
