@@ -6,12 +6,14 @@ import { HomeComponent } from './home/home.component';
 import { AareService } from './home/aare-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './home/loading/loading.component';
+import { AnswerPipe } from './answer.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoadingComponent
+    LoadingComponent,
+    AnswerPipe
   ],
   imports: [
     BrowserModule,

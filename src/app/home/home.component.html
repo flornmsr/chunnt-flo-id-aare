@@ -33,7 +33,7 @@
         </div>
         <div class="message message-r" #answerDiv>
             <div class="answer">
-                {{answer}}
+                {{answer | answer: aareData}}
             </div>
             <div class="time">
                 {{ currentTime | date : 'HH:mm'}}

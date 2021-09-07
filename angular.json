@@ -121,8 +121,13 @@
               "devServerTarget": "chunnt-flo-id-aare:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "chunnt-flo-id-aare"
 }
