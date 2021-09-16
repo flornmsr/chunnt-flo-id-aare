@@ -7,15 +7,6 @@ import { InstaComponent } from './insta/insta.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/chunnt-flo-id-aare',
-    pathMatch: 'full'
-  },
-  {
-    path: 'flinsta',
-    component: InstaComponent
-  },
-  {
-    path: 'chunnt-flo-id-aare',
     component: HomeComponent,
   }
 ];

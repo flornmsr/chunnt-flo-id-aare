@@ -67,8 +67,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _insta_insta_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./insta/insta.component */ "./src/app/insta/insta.component.ts");
-
 
 
 
@@ -77,15 +75,6 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        redirectTo: '/chunnt-flo-id-aare',
-        pathMatch: 'full'
-    },
-    {
-        path: 'flinsta',
-        component: _insta_insta_component__WEBPACK_IMPORTED_MODULE_3__["InstaComponent"]
-    },
-    {
-        path: 'chunnt-flo-id-aare',
         component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"],
     }
 ];
