@@ -54,6 +54,64 @@ AnswerPipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]
 
 /***/ }),
 
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _insta_insta_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./insta/insta.component */ "./src/app/insta/insta.component.ts");
+
+
+
+
+
+
+const routes = [
+    {
+        path: '',
+        redirectTo: '/chunnt-flo-id-aare',
+        pathMatch: 'full'
+    },
+    {
+        path: 'flinsta',
+        component: _insta_insta_component__WEBPACK_IMPORTED_MODULE_3__["InstaComponent"]
+    },
+    {
+        path: 'chunnt-flo-id-aare',
+        component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"],
+    }
+];
+class AppRoutingModule {
+}
+AppRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
+AppRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function AppRoutingModule_Factory(t) { return new (t || AppRoutingModule)(); }, imports: [[
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)
+        ], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppRoutingModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)
+                ],
+                exports: [
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]
+                ],
+                declarations: []
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
 /***/ "./src/app/app.component.ts":
 /*!**********************************!*\
   !*** ./src/app/app.component.ts ***!
@@ -65,7 +123,7 @@ AnswerPipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
 
@@ -76,8 +134,8 @@ class AppComponent {
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
 AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 1, vars: 0, template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "home");
-    } }, directives: [_home_home_component__WEBPACK_IMPORTED_MODULE_1__["HomeComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "router-outlet");
+    } }, directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -108,6 +166,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _home_loading_loading_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/loading/loading.component */ "./src/app/home/loading/loading.component.ts");
 /* harmony import */ var _answer_pipe__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./answer.pipe */ "./src/app/answer.pipe.ts");
+/* harmony import */ var _insta_insta_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./insta/insta.component */ "./src/app/insta/insta.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+
+
 
 
 
@@ -122,13 +184,16 @@ class AppModule {
 AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]] });
 AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [_home_aare_service_service__WEBPACK_IMPORTED_MODULE_4__["AareService"]], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"]
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"]
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
         _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"],
         _home_loading_loading_component__WEBPACK_IMPORTED_MODULE_6__["LoadingComponent"],
-        _answer_pipe__WEBPACK_IMPORTED_MODULE_7__["AnswerPipe"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"]] }); })();
+        _answer_pipe__WEBPACK_IMPORTED_MODULE_7__["AnswerPipe"],
+        _insta_insta_component__WEBPACK_IMPORTED_MODULE_8__["InstaComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
+        _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
@@ -136,11 +201,13 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
                     _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"],
                     _home_loading_loading_component__WEBPACK_IMPORTED_MODULE_6__["LoadingComponent"],
-                    _answer_pipe__WEBPACK_IMPORTED_MODULE_7__["AnswerPipe"]
+                    _answer_pipe__WEBPACK_IMPORTED_MODULE_7__["AnswerPipe"],
+                    _insta_insta_component__WEBPACK_IMPORTED_MODULE_8__["InstaComponent"]
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                    _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"]
+                    _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
+                    _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"]
                 ],
                 providers: [_home_aare_service_service__WEBPACK_IMPORTED_MODULE_4__["AareService"]],
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
@@ -371,6 +438,42 @@ LoadingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
                 selector: 'loading',
                 templateUrl: './loading.component.html',
                 styleUrls: ['./loading.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/insta/insta.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/insta/insta.component.ts ***!
+  \******************************************/
+/*! exports provided: InstaComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstaComponent", function() { return InstaComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+class InstaComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+InstaComponent.ɵfac = function InstaComponent_Factory(t) { return new (t || InstaComponent)(); };
+InstaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: InstaComponent, selectors: [["app-insta"]], decls: 2, vars: 0, template: function InstaComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "insta works!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2luc3RhL2luc3RhLmNvbXBvbmVudC5zY3NzIn0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](InstaComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-insta',
+                templateUrl: './insta.component.html',
+                styleUrls: ['./insta.component.scss']
             }]
     }], function () { return []; }, null); })();
 

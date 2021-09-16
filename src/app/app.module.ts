@@ -7,17 +7,21 @@ import { AareService } from './home/aare-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './home/loading/loading.component';
 import { AnswerPipe } from './answer.pipe';
+import { InstaComponent } from './insta/insta.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoadingComponent,
-    AnswerPipe
+    AnswerPipe,
+    InstaComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [AareService],
   bootstrap: [AppComponent]
