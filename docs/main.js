@@ -388,7 +388,7 @@ const randomAnswers = {
     medium: [`Bi {temp}° C bruchsch gueti argument für mi z überzüge. Aber d hoffnig stirbt z letscht. Unger vorbehalt bini derbi`,
         '{temp}° C isch e gränzfall. Aber gränze si ja da zum überschrite. Odr so. Vilech bini derbi',
         'Weisch was der ungerschied zwüschemne Zug und ere Wöschmaschine isch? (Beträffend der Aafrag: Si isch in bearbeitig. D erfolgschance stöh bi {temp}° C ni schlächt si aber scho besser gsi.)'],
-    cold: [`Spinnsch? Bi {temp}° C, da gfriertmer ja mi arsch ab!`, '{temp}° C, es isch e Schand dasde di derfür hesch gha die website z öffne.'],
+    cold: [`Spinnsch? Bi {temp}° C, da gfriertmer ja mi arsch ab!`, '{temp}° C, es isch e Schand dasde di derfür hesch gha die website z öffne.', 'Brrr. {temp}° C: Definitiv Winterpouse', 'Bi {temp}° C tueni lieber Iisfische'],
     flow: [`Nei Sorry. Es ziehtmer z fescht. Bi {flow} m³/s chasch 1x Blinzle und scho bisch ir Schwelle`]
 };
 
