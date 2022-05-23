@@ -32,9 +32,7 @@
             <loading></loading>
         </div>
         <div class="message message-r" #answerDiv>
-            <div class="answer">
-                {{answer | answer: aareData}}
-            </div>
+            <div class="answer" [innerHTML]="answer | answer: aareData"></div>
             <div class="time">
                 {{ currentTime | date : 'HH:mm'}}
             </div>

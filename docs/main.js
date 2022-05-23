@@ -270,9 +270,6 @@ class HomeComponent {
     ngOnInit() {
         this.aareService.getCurrentAareData().subscribe(data => {
             this.aareData = data;
-            // this.aareData.aare.temperature = 180.9
-            // this.aareData.aare.flow=400
-            console.log(this.aareData);
             this.writeAnswer();
             setTimeout(() => {
                 this.loadingElement.nativeElement.style.display = "block";
@@ -289,7 +286,7 @@ class HomeComponent {
             if (this.aareData.aare.temperature >= 20) {
                 this.answer = this.getRandomAnswer(randomAnswers.warm);
             }
-            else if (this.aareData.aare.temperature < 20 && this.aareData.aare.temperature >= 19) {
+            else if (this.aareData.aare.temperature < 20 && this.aareData.aare.temperature >= 18) {
                 this.answer = this.getRandomAnswer(randomAnswers.medium);
             }
             else {
@@ -312,7 +309,7 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.answerElement = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.loadingElement = _t.first);
-    } }, decls: 32, vars: 12, consts: [[1, "content"], [1, "header", "container"], [1, "material-icons", 2, "margin-left", "0.55em"], ["src", "./assets/pofilbild.jpg", 1, "pic"], [1, "text"], [1, "icons"], [1, "material-icons", "my-icon"], [1, "messager"], [1, "message"], [1, "typing-demo"], [1, "time"], [1, "message", "message-r"], ["loadingDiv", ""], ["answerDiv", ""], [1, "answer"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 31, vars: 12, consts: [[1, "content"], [1, "header", "container"], [1, "material-icons", 2, "margin-left", "0.55em"], ["src", "./assets/pofilbild.jpg", 1, "pic"], [1, "text"], [1, "icons"], [1, "material-icons", "my-icon"], [1, "messager"], [1, "message"], [1, "typing-demo"], [1, "time"], [1, "message", "message-r"], ["loadingDiv", ""], ["answerDiv", ""], [1, "answer", 3, "innerHTML"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span", 2);
@@ -348,13 +345,11 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "loading");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "div", 11, 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](28, "answer");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "div", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](31, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](26, "div", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](27, "answer");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](30, "date");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -362,11 +357,11 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](19);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](20, 3, ctx.currentTime, "HH:mm"), " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](28, 6, ctx.answer, ctx.aareData), " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](27, 6, ctx.answer, ctx.aareData), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](31, 9, ctx.currentTime, "HH:mm"), " ");
-    } }, directives: [_loading_loading_component__WEBPACK_IMPORTED_MODULE_2__["LoadingComponent"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["DatePipe"], _answer_pipe__WEBPACK_IMPORTED_MODULE_4__["AnswerPipe"]], styles: [".typing-demo[_ngcontent-%COMP%] {\n  width: 14ch;\n  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;\n  white-space: nowrap;\n  overflow: hidden;\n  border-right: 3px solid;\n  font-size: 1.5em;\n}\n\n.messager[_ngcontent-%COMP%] {\n  margin: 1em;\n}\n\n.messager[_ngcontent-%COMP%]   .message[_ngcontent-%COMP%] {\n  width: 220px;\n  padding: 0.5em;\n  border-radius: 0.5em;\n  background-color: rgba(43, 66, 88, 0.6);\n  margin-bottom: 0.5em;\n}\n\n.messager[_ngcontent-%COMP%]   .message-r[_ngcontent-%COMP%] {\n  background-color: rgba(77, 43, 59, 0.6);\n  margin-left: auto;\n  width: 300px;\n  display: none;\n}\n\n.messager[_ngcontent-%COMP%]   .answer[_ngcontent-%COMP%] {\n  font-size: 1.5em;\n}\n\n.header[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 70px;\n  background-color: #333333;\n}\n\n.header[_ngcontent-%COMP%]   .icons[_ngcontent-%COMP%] {\n  margin-right: 1em;\n  margin-left: auto;\n}\n\n.header[_ngcontent-%COMP%]   .icons[_ngcontent-%COMP%]   .my-icon[_ngcontent-%COMP%] {\n  margin: 0 0.3em;\n}\n\n.header[_ngcontent-%COMP%]   .text[_ngcontent-%COMP%] {\n  font-size: 1.5em;\n  margin: 0;\n}\n\n.header[_ngcontent-%COMP%]   .pic[_ngcontent-%COMP%] {\n  margin: 10px;\n  width: 50px;\n  height: 50px;\n  border-radius: 100px;\n}\n\n@keyframes typing {\n  from {\n    width: 0;\n  }\n}\n\n@keyframes blink {\n  50% {\n    border-color: transparent;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksV0FBQTtFQUNBLHNFQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtFQUNBLHVCQUFBO0VBRUEsZ0JBQUE7QUFBSjs7QUFHQTtFQUNJLFdBQUE7QUFBSjs7QUFDSTtFQUNJLFlBQUE7RUFDQSxjQUFBO0VBQ0Esb0JBQUE7RUFDQSx1Q0FBQTtFQUNBLG9CQUFBO0FBQ1I7O0FBQ0k7RUFDSSx1Q0FBQTtFQUNBLGlCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7QUFDUjs7QUFDSTtFQUNJLGdCQUFBO0FBQ1I7O0FBR0E7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLHlCQUFBO0FBQUo7O0FBQ0k7RUFDSSxpQkFBQTtFQUNBLGlCQUFBO0FBQ1I7O0FBQVE7RUFDSSxlQUFBO0FBRVo7O0FBQ0k7RUFDSSxnQkFBQTtFQUNBLFNBQUE7QUFDUjs7QUFDSTtFQUNJLFlBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLG9CQUFBO0FBQ1I7O0FBR0E7RUFDSTtJQUNJLFFBQUE7RUFBTjtBQUNGOztBQUdBO0VBQ0k7SUFDSSx5QkFBQTtFQUROO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudHlwaW5nLWRlbW8ge1xyXG4gICAgd2lkdGg6IDE0Y2g7XHJcbiAgICBhbmltYXRpb246IHR5cGluZyAycyBzdGVwcygyMiksIGJsaW5rIDAuNXMgc3RlcC1lbmQgaW5maW5pdGUgYWx0ZXJuYXRlO1xyXG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICBib3JkZXItcmlnaHQ6IDNweCBzb2xpZDtcclxuICAgIC8vIGZvbnQtZmFtaWx5OiBtb25vc3BhY2U7XHJcbiAgICBmb250LXNpemU6IDEuNWVtO1xyXG59XHJcblxyXG4ubWVzc2FnZXIge1xyXG4gICAgbWFyZ2luOiAxZW07XHJcbiAgICAubWVzc2FnZSB7XHJcbiAgICAgICAgd2lkdGg6IDIyMHB4O1xyXG4gICAgICAgIHBhZGRpbmc6IDAuNWVtO1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDAuNWVtO1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoNDMsIDY2LCA4OCwgMC42KTtcclxuICAgICAgICBtYXJnaW4tYm90dG9tOiAwLjVlbTtcclxuICAgIH1cclxuICAgIC5tZXNzYWdlLXJ7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSg3NywgNDMsIDU5LCAwLjYpO1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gICAgICAgIHdpZHRoOiAzMDBweDtcclxuICAgICAgICBkaXNwbGF5OiBub25lO1xyXG4gICAgfVxyXG4gICAgLmFuc3dlcntcclxuICAgICAgICBmb250LXNpemU6IDEuNWVtO1xyXG4gICAgfVxyXG59XHJcblxyXG4uaGVhZGVyIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiA3MHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzMzMzMzMztcclxuICAgIC5pY29ucyB7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAxZW07XHJcbiAgICAgICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbiAgICAgICAgLm15LWljb24ge1xyXG4gICAgICAgICAgICBtYXJnaW46IDAgMC4zZW07XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG4gICAgLnRleHQge1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMS41ZW07XHJcbiAgICAgICAgbWFyZ2luOiAwO1xyXG4gICAgfVxyXG4gICAgLnBpYyB7XHJcbiAgICAgICAgbWFyZ2luOiAxMHB4O1xyXG4gICAgICAgIHdpZHRoOiA1MHB4O1xyXG4gICAgICAgIGhlaWdodDogNTBweDtcclxuICAgICAgICBib3JkZXItcmFkaXVzOiAxMDBweDtcclxuICAgIH1cclxufVxyXG5cclxuQGtleWZyYW1lcyB0eXBpbmcge1xyXG4gICAgZnJvbSB7XHJcbiAgICAgICAgd2lkdGg6IDA7XHJcbiAgICB9XHJcbn1cclxuXHJcbkBrZXlmcmFtZXMgYmxpbmsge1xyXG4gICAgNTAlIHtcclxuICAgICAgICBib3JkZXItY29sb3I6IHRyYW5zcGFyZW50O1xyXG4gICAgfVxyXG59XHJcbiJdfQ== */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](30, 9, ctx.currentTime, "HH:mm"), " ");
+    } }, directives: [_loading_loading_component__WEBPACK_IMPORTED_MODULE_2__["LoadingComponent"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["DatePipe"], _answer_pipe__WEBPACK_IMPORTED_MODULE_4__["AnswerPipe"]], styles: [".typing-demo[_ngcontent-%COMP%] {\n  width: 14ch;\n  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;\n  white-space: nowrap;\n  overflow: hidden;\n  border-right: 3px solid;\n  font-size: 1.5em;\n}\n\n.messager[_ngcontent-%COMP%] {\n  margin: 1em;\n}\n\n.messager[_ngcontent-%COMP%]   .message[_ngcontent-%COMP%] {\n  width: 220px;\n  padding: 0.5em;\n  border-radius: 0.5em;\n  background-color: rgba(43, 66, 88, 0.6);\n  margin-bottom: 0.5em;\n}\n\n.messager[_ngcontent-%COMP%]   .message-r[_ngcontent-%COMP%] {\n  background-color: rgba(77, 43, 59, 0.6);\n  margin-left: auto;\n  width: 300px;\n  display: none;\n}\n\n.messager[_ngcontent-%COMP%]   .answer[_ngcontent-%COMP%] {\n  font-size: 1.5em;\n}\n\n.header[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 70px;\n  background-color: #333333;\n}\n\n.header[_ngcontent-%COMP%]   .icons[_ngcontent-%COMP%] {\n  margin-right: 1em;\n  margin-left: auto;\n}\n\n.header[_ngcontent-%COMP%]   .icons[_ngcontent-%COMP%]   .my-icon[_ngcontent-%COMP%] {\n  margin: 0 0.3em;\n}\n\n.header[_ngcontent-%COMP%]   .text[_ngcontent-%COMP%] {\n  font-size: 1.5em;\n  margin: 0;\n}\n\n.header[_ngcontent-%COMP%]   .pic[_ngcontent-%COMP%] {\n  margin: 10px;\n  width: 50px;\n  height: 50px;\n  border-radius: 100px;\n}\n\n@keyframes typing {\n  from {\n    width: 0;\n  }\n}\n\n@keyframes blink {\n  50% {\n    border-color: transparent;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksV0FBQTtFQUNBLHNFQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtFQUNBLHVCQUFBO0VBRUEsZ0JBQUE7QUFBSjs7QUFHQTtFQUNJLFdBQUE7QUFBSjs7QUFDSTtFQUNJLFlBQUE7RUFDQSxjQUFBO0VBQ0Esb0JBQUE7RUFDQSx1Q0FBQTtFQUNBLG9CQUFBO0FBQ1I7O0FBQ0k7RUFDSSx1Q0FBQTtFQUNBLGlCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7QUFDUjs7QUFDSTtFQUNJLGdCQUFBO0FBQ1I7O0FBR0E7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLHlCQUFBO0FBQUo7O0FBQ0k7RUFDSSxpQkFBQTtFQUNBLGlCQUFBO0FBQ1I7O0FBQVE7RUFDSSxlQUFBO0FBRVo7O0FBQ0k7RUFDSSxnQkFBQTtFQUNBLFNBQUE7QUFDUjs7QUFDSTtFQUNJLFlBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLG9CQUFBO0FBQ1I7O0FBSUE7RUFDSTtJQUNJLFFBQUE7RUFETjtBQUNGOztBQUlBO0VBQ0k7SUFDSSx5QkFBQTtFQUZOO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudHlwaW5nLWRlbW8ge1xyXG4gICAgd2lkdGg6IDE0Y2g7XHJcbiAgICBhbmltYXRpb246IHR5cGluZyAycyBzdGVwcygyMiksIGJsaW5rIDAuNXMgc3RlcC1lbmQgaW5maW5pdGUgYWx0ZXJuYXRlO1xyXG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICBib3JkZXItcmlnaHQ6IDNweCBzb2xpZDtcclxuICAgIC8vIGZvbnQtZmFtaWx5OiBtb25vc3BhY2U7XHJcbiAgICBmb250LXNpemU6IDEuNWVtO1xyXG59XHJcblxyXG4ubWVzc2FnZXIge1xyXG4gICAgbWFyZ2luOiAxZW07XHJcbiAgICAubWVzc2FnZSB7XHJcbiAgICAgICAgd2lkdGg6IDIyMHB4O1xyXG4gICAgICAgIHBhZGRpbmc6IDAuNWVtO1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDAuNWVtO1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoNDMsIDY2LCA4OCwgMC42KTtcclxuICAgICAgICBtYXJnaW4tYm90dG9tOiAwLjVlbTtcclxuICAgIH1cclxuICAgIC5tZXNzYWdlLXJ7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSg3NywgNDMsIDU5LCAwLjYpO1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gICAgICAgIHdpZHRoOiAzMDBweDtcclxuICAgICAgICBkaXNwbGF5OiBub25lO1xyXG4gICAgfVxyXG4gICAgLmFuc3dlcntcclxuICAgICAgICBmb250LXNpemU6IDEuNWVtO1xyXG4gICAgfVxyXG59XHJcblxyXG4uaGVhZGVyIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiA3MHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzMzMzMzMztcclxuICAgIC5pY29ucyB7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAxZW07XHJcbiAgICAgICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbiAgICAgICAgLm15LWljb24ge1xyXG4gICAgICAgICAgICBtYXJnaW46IDAgMC4zZW07XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG4gICAgLnRleHQge1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMS41ZW07XHJcbiAgICAgICAgbWFyZ2luOiAwO1xyXG4gICAgfVxyXG4gICAgLnBpYyB7XHJcbiAgICAgICAgbWFyZ2luOiAxMHB4O1xyXG4gICAgICAgIHdpZHRoOiA1MHB4O1xyXG4gICAgICAgIGhlaWdodDogNTBweDtcclxuICAgICAgICBib3JkZXItcmFkaXVzOiAxMDBweDtcclxuICAgIH1cclxufVxyXG5cclxuXHJcbkBrZXlmcmFtZXMgdHlwaW5nIHtcclxuICAgIGZyb20ge1xyXG4gICAgICAgIHdpZHRoOiAwO1xyXG4gICAgfVxyXG59XHJcblxyXG5Aa2V5ZnJhbWVzIGJsaW5rIHtcclxuICAgIDUwJSB7XHJcbiAgICAgICAgYm9yZGVyLWNvbG9yOiB0cmFuc3BhcmVudDtcclxuICAgIH1cclxufVxyXG4iXX0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](HomeComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -383,12 +378,19 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         }] }); })();
 const randomAnswers = {
     warm: [`fiiix! wenn d aare {temp}° C isch de läbi dert inne`,
-        `Jede cha mache waser wott. aaaber i empfileder bi {temp}° C wermstens id aare z cho.`,
+        `Jede cha mache wasser wott. aaaber i empfileder bi {temp}° C wermstens id aare z cho.`,
         '{temp}° C, Herrläch! Weni nid grad am Schäfli zeuä bi chumi ganz sicher'],
-    medium: [`Bi {temp}° C bruchsch gueti argument für mi z überzüge. Aber d hoffnig stirbt z letscht. Unger vorbehalt bini derbi`,
+    medium: [`D Aare isch {temp}° C. Hmmm. <a href="https://g.co/kgs/f4SZct" target="_blank">Wirf doch e Münzä</a>, bi Zahl bini derbi`,
+        `Bi {temp}° C bruchsch gueti argument für mi z überzüge. Aber d hoffnig stirbt z letscht. Unger vorbehalt bini derbi`,
         '{temp}° C isch e gränzfall. Aber gränze si ja da zum überschrite. Odr so. Vilech bini derbi',
         'Weisch was der ungerschied zwüschemne Zug und ere Wöschmaschine isch? (Beträffend der Aafrag: Si isch in bearbeitig. D erfolgschance stöh bi {temp}° C ni schlächt si aber scho besser gsi.)'],
-    cold: [`Spinnsch? Bi {temp}° C, da gfriertmer ja mi arsch ab!`, '{temp}° C, es isch e Schand dasde di derfür hesch gha die website z öffne.', 'Brrr. {temp}° C: Definitiv Winterpouse', 'Bi {temp}° C tueni lieber Iisfische'],
+    cold: [`Spinnsch? Bi {temp}° C, da gfriertmer ja mi arsch ab!`,
+        '{temp}° C, es isch e Schand dasde di derfür hesch gha die website z öffne.',
+        'Brrr. {temp}° C: Definitiv Winterpouse',
+        'Bi {temp}° C tueni lieber Iisfische',
+        'Hallo!? D Aare isch {temp}° C! Gsehni us aus würdi zur 365-Tag-Aare-Schwumm-Community ghöre?',
+        'Sorry. Mi Neopren isch grad ir chemische Reinigung. Bi {temp}° C muesch nid mir mir rächne.',
+        '{temp}° C ischmer ds chalt. Variante 1)<br> Dr Temperatursensor mit mit ere gezielte Miktion manipuliere. <br> Variante 2)<br> Ohni mi gah'],
     flow: [`Nei Sorry. Es ziehtmer z fescht. Bi {flow} m³/s chasch 1x Blinzle und scho bisch ir Schwelle`]
 };
 

@@ -69,3 +69,23 @@ body{
     border-radius: 3px;
   }
 }
+
+ /* unvisited link */
+ a:link {
+  color: rgb(235, 141, 211);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(182, 112, 176);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: rgb(255, 199, 234);
+} 
