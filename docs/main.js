@@ -382,7 +382,7 @@ const randomAnswers = {
         `Jede cha mache wasser wott. aaaber i empfileder bi {temp}° C wermstens id aare z cho.`,
         '{temp}° C, Herrläch! Weni nid grad am Schäfli zeuä bi chumi ganz sicher',
         `Stig iiii! Es isch {temp}° C`,
-        `Bi {temp}° C sägi nur: <br><div><img src="/assets/yeah-boy.gif" width="300" height="150"></div>`
+        `Bi {temp}° C sägi nur: <br><div><img src="assets/yeah-boy.gif" width="300" height="150"></div>`
     ],
     medium: [`D Aare isch {temp}° C. Hmmm. <a href="https://g.co/kgs/f4SZct" target="_blank">Wirf doch e Münzä</a>, bi Zahl bini derbi`,
         `Bi {temp}° C bruchsch gueti argument für mi z überzüge. Aber d hoffnig stirbt z letscht. Unger vorbehalt bini derbi`,
