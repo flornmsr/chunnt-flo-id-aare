@@ -56,9 +56,13 @@ export class HomeComponent implements OnInit {
 }
 
 export const randomAnswers = {
-  warm: [`fiiix! wenn d aare {temp}° C isch de läbi dert inne`,
+  warm: [
+    `fiiix! wenn d aare {temp}° C isch de läbi dert inne`,
     `Jede cha mache wasser wott. aaaber i empfileder bi {temp}° C wermstens id aare z cho.`,
-    '{temp}° C, Herrläch! Weni nid grad am Schäfli zeuä bi chumi ganz sicher'],
+    '{temp}° C, Herrläch! Weni nid grad am Schäfli zeuä bi chumi ganz sicher', 
+    `Stig iiii! Es isch {temp}° C`,
+    `Bi {temp}° C sägi nur: <br><div><img src="/assets/yeah-boy.gif" width="300" height="150"></div>`
+  ],
   medium: [`D Aare isch {temp}° C. Hmmm. <a href="https://g.co/kgs/f4SZct" target="_blank">Wirf doch e Münzä</a>, bi Zahl bini derbi`,
     `Bi {temp}° C bruchsch gueti argument für mi z überzüge. Aber d hoffnig stirbt z letscht. Unger vorbehalt bini derbi`,
     '{temp}° C isch e gränzfall. Aber gränze si ja da zum überschrite. Odr so. Vilech bini derbi',
@@ -69,6 +73,6 @@ export const randomAnswers = {
     'Bi {temp}° C tueni lieber Iisfische',
     'Hallo!? D Aare isch {temp}° C! Gsehni us aus würdi zur 365-Tag-Aare-Schwumm-Community ghöre?',
     'Sorry. Mi Neopren isch grad ir chemische Reinigung. Bi {temp}° C muesch nid mir mir rächne.',
-    '{temp}° C ischmer ds chalt. Variante 1)<br> Dr Temperatursensor mit mit ere gezielte Miktion manipuliere. <br> Variante 2)<br> Ohni mi gah'],
+    '{temp}° C ischmer ds chalt. Variante 1)<br> Dr Temperatursensor manipuliere. <br> Variante 2)<br> Ohni mi gah'],
   flow: [`Nei Sorry. Es ziehtmer z fescht. Bi {flow} m³/s chasch 1x Blinzle und scho bisch ir Schwelle`]
 }
