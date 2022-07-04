@@ -1,16 +1,15 @@
 {
-    "background_color": "#326fa8",
-    "description": "Wenns warm wird isch di wichtegschti Frag immer: 'Chunnsch id Aare?'",
-    "display": "fullscreen",
-    "icons": [
-      {
-        "src": "/assets/aare.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      }
-    ],
-    "name": "chunnt flo id aare?",
-    "short_name": "Aare?",
-    "start_url": "/"
-  }
-  
+  "background_color": "#326fa8",
+  "description": "Wenns warm wird isch di wichtegschti Frag immer: 'Chunnsch id Aare?'",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "/assets/aare.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "chunnt flo id aare?",
+  "short_name": "aare?",
+  "start_url": "/chunnt-flo-id-aare/"
+}
