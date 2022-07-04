@@ -283,10 +283,10 @@ class HomeComponent {
     writeAnswer() {
         if (this.aareData.aare.flow < 280) {
             console.log(randomAnswers.warm[0]);
-            if (this.aareData.aare.temperature >= 20) {
+            if (this.aareData.aare.temperature >= 19) {
                 this.answer = this.getRandomAnswer(randomAnswers.warm);
             }
-            else if (this.aareData.aare.temperature < 20 && this.aareData.aare.temperature >= 18) {
+            else if (this.aareData.aare.temperature < 19 && this.aareData.aare.temperature >= 18) {
                 this.answer = this.getRandomAnswer(randomAnswers.medium);
             }
             else {
